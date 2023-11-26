@@ -3,11 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First task</title>
+    <title>Document</title>
 </head>
 <body>
     <div>
-        <p>hello_world</p>
+        <h1>B.M.I <br><b>BODY MASS INDEX</b></h1>
+        <p>hello i am B.M.I. claculeter lets try  </p>
+        <div class="container">
+            <label for="mass"> mass </label>
+            <input type="number" id="mass" placeholder="give me your wegith: ">
+        </div>
+        <div class="container">
+            <label for="hegiht"> mass </label>
+            <input type="number" id="hegiht" placeholder="give me your hegiht: ">
+        </div>
+        <div class="container">
+            <button for="mass"> mass </button>
+
+        </div>
+
     </div>
+    <script>
+        const mass = prompt('what is ur mass: ');
+        const hegiht = prompt('give me ur hegiht: ');
+        // bmi 
+        const bmi = mass/(hegiht * hegiht);
+        
+        console.log(bmi);
+        if (bmi > 30)
+            console.log('overwight');
+        else if(bmi>=20)
+            console.log('good')
+        else
+        console.log ('under weghit')
+
+
+        
+    </script>
 </body>
 </html>
