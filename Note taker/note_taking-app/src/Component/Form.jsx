@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const Form = () => {
+  const[note,setnote]=useState(['note1','note2'])
   const [content, setContent] = useState("");
   const [mainTopic, setmainTopic] = useState("");
   const [subTopic, setsubTopic] = useState("");
@@ -39,6 +40,7 @@ const Form = () => {
         maxLength={10}
         />
         <textarea
+          id="note"
           value={subTopic}
           onChange={(event) => {
             setsubTopic(event.target.value);
@@ -48,7 +50,7 @@ const Form = () => {
         <button onClick={saveClick}>save</button>
         <button className="show-btn" type="button">show</button>
       </form>
-      {/* {
+      {
     
     <div key ={note.id}>
       notes.map((note))= (
@@ -60,7 +62,7 @@ const Form = () => {
       )
     </div>
       
-  } */}
+  }
     </main>
     
   );
